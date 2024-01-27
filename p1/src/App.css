@@ -1,0 +1,152 @@
+/* Global Styles */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --red: #d01c28;
+  --gray: #2e2e2e;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Button Styles */
+
+button {
+  all: unset;
+  padding: 6px 16px;
+  background: var(--red);
+  height: 32px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.primary-btn {
+  background: var(--red);
+  color: white;
+  border: none;
+}
+
+.secondary-btn {
+  background: transparent;
+  color: var(--gray);
+  border: 1px solid gray;
+}
+
+/* Container Styles */
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Navigation Styles */
+
+nav {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+  nav ul {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav li {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Hero Section */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: calc(100vh - 72px);
+  flex-direction: column;
+}
+
+.hero-content {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 2rem;
+}
+
+.hero p {
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+
+  .hero {
+    height: calc(100vh - 72px);
+    flex-direction: row;
+  }
+
+  .hero-content {
+    max-width: 600px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem; 
+  }
+
+}
+
+/* Other Styles */
+
+.shopping p {
+  font-size: 14px; 
+  margin-bottom: 8px;
+}
+
+.brand-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
